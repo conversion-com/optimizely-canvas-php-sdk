@@ -1,5 +1,5 @@
-# Optimizely Canvas PHP Starter Kit
-Basic authentication kit for PHP in Optimizely Canvas. See http://developers.optimizely.com/canvas/ for detailed documentation on Optimizely Canvas.
+# Optimizely Canvas PHP SDK
+A PHP Software Development Kit for use with Optimizely Canvas. See http://developers.optimizely.com/canvas/ for detailed documentation on Optimizely Canvas.
 
 ## Installation
 Download `auth.php` into your project and `require` it in your code:
@@ -32,7 +32,7 @@ We advise that you use [FunnelEnvy's Optimizely PHP wrapper](https://github.com/
 
 ```php
 require_once './auth.php';
-require_once '../optimizely-php/optimizely.php';
+require_once './optimizely-php/optimizely.php';
 
 // Authenticate with Optimizely
 $optimizely = new Optimizely($CONTEXT->context->client->access_token, 'oauth');
